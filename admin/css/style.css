@@ -1,0 +1,86 @@
+:root {
+  --teal: #2ec1ac;
+  --teal-hover: #279e8c;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  height: 100%;
+}
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #1e3b8a;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #f1f1f1;
+}
+
+.h-font {
+  font-family: "Merienda", cursive;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* carousel start */
+.swiperContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* carousel end */
+
+/* check avaibility form start */
+
+.h-text {
+  font-size: 45px;
+  font-weight: 900;
+  margin-bottom: 15px;
+  color: #1e3b8a;
+}
+
+.lable-from {
+  font-weight: 500;
+}
+.custom-bg {
+  background-color: var(--teal);
+}
+.custom-bg:hover {
+  background-color: var(--teal-hover);
+}
+
+.h-line {
+  width: 10%;
+  margin: 0 auto;
+  height: 1.7px;
+  background-color: #e8664f;
+}

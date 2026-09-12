@@ -1,23 +1,11 @@
-:root{
+:root {
   --teal: #2ec1ac;
   --teal-hover: #279e8c;
 }
 body {
   font-family: "Poppins", sans-serif;
-
   position: relative;
   height: 100%;
-
-  /* background: #000;
-        font-family:
-          Helvetica Neue,
-          Helvetica,
-          Arial,
-          sans-serif;
-        font-size: 14px;
-        color: #fff;
-        margin: 0;
-        padding: 0; */
 }
 body::-webkit-scrollbar {
   width: 5px;
@@ -88,7 +76,7 @@ input[type="number"] {
   background-color: var(--teal);
 }
 .custom-bg:hover {
-  background-color:var(--teal-hover) ;
+  background-color: var(--teal-hover);
 }
 
 .avaibility-from {
@@ -109,122 +97,110 @@ input[type="number"] {
     color: #1e3b8a;
   }
 }
-/* check avaibility form end */
 
-/* rooms card start */
-
-/* rooms card end */
-
-/* testimonials start */
 .testimonial-section {
-    background-color: #f8f9fa; /* Halka light background */
+  background-color: #f8f9fa; /* Halka light background */
 }
 
 .testimonial-card {
-    background: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-    border-top: 4px solid #2ec1ac; /* Upar se teal color ki line */
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border-top: 4px solid #2ec1ac; /* Upar se teal color ki line */
 }
 
 /* Hover karne par card thoda upar uth jayega */
 .testimonial-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
 }
 
 /* Background me bada quotation mark ( ") banane ke liye */
 .testimonial-card::before {
-    content: "\201C"; 
-    font-family: Georgia, serif;
-    font-size: 120px;
-    color: rgba(46, 193, 172, 0.1); /* Teal color halka transparent */
-    position: absolute;
-    top: 10px;
-    left: 20px;
-    line-height: 1;
-    z-index: 0;
+  content: "\201C";
+  font-family: Georgia, serif;
+  font-size: 120px;
+  color: rgba(46, 193, 172, 0.1); /* Teal color halka transparent */
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  line-height: 1;
+  z-index: 0;
 }
 
-
-
 .rating {
-    color: #ffc107; /* Stars ko Golden color */
-    font-size: 16px;
-    position: relative;
-    z-index: 1;
+  color: #ffc107; /* Stars ko Golden color */
+  font-size: 16px;
+  position: relative;
+  z-index: 1;
 }
 
 .testimonial-text {
-    color: #555;
-    font-size: 15px;
-    line-height: 1.6;
-    position: relative;
-    z-index: 1;
+  color: #555;
+  font-size: 15px;
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
 }
 
 .user-name {
-    color: #1e3b8a; /* Dark Blue color for name */
-    font-weight: 600;
-    margin-bottom: 2px;
-    position: relative;
-    z-index: 1;
+  color: #1e3b8a; /* Dark Blue color for name */
+  font-weight: 600;
+  margin-bottom: 2px;
+  position: relative;
+  z-index: 1;
 }
 
 .user-location {
-    color: #888;
-    font-size: 13px;
-    margin-bottom: 0;
-    position: relative;
-    z-index: 1;
+  color: #888;
+  font-size: 13px;
+  margin-bottom: 0;
+  position: relative;
+  z-index: 1;
 }
 /* testimonials end */
 
-
 /* our facilities page start */
 
-.h-line{
+.h-line {
   width: 10%;
   margin: 0 auto;
   height: 1.7px;
   background-color: #e8664f;
 }
 
-.pop:hover{
+.pop:hover {
   border-top-color: var(--teal) !important;
   transform: scale(1.03);
   transition: all 0.3s;
 }
 
-
 /* our facilities page end */
 
 /* about us start */
- .box{
-  border-top-color:var(--teal) !important ;
- }
- .box:hover{
+.box {
+  border-top-color: var(--teal) !important ;
+}
+.box:hover {
   transform: translateY(-8px);
   transition: all 0.3s;
- }
+}
 
-
- .mySwiper .swiper-slide {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.mySwiper .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .mySwiper .swiper-slide h6 {
-    margin-top:  10px;
-    margin-bottom: 0;
-    color: #212529 !important;
-    display: block;
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: #212529 !important;
+  display: block;
 }
-
 
 /* about us end */
