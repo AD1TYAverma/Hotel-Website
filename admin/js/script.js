@@ -12,3 +12,5 @@ showPassword.addEventListener("click", function () {
     this.innerHTML = '<i class="fa-solid fa-eye"></i>';
   }
 });
+
+

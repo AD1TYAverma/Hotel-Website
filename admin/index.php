@@ -2,6 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -52,6 +53,8 @@
                                 <div class="input-group"> <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
 
                                     <input type="password" id="password" name="admin_pass" class="form-control shadow-none" placeholder="Enter your password" required>
+
+                                    <button type="button" class="btn password-btn shadow-none" id="showPassword"><i class="fa-solid fa-eye"></i></button>
                                 </div>
                             </div>
                             <!-- Login Button -->
@@ -63,7 +66,22 @@
         </div>
     </div>
 
+<?php
+    if (isset($_POST['login'])) {
+        $frm_data = filteration($_POST);
 
+        $query = "SELECT * FROM `admin` WHERE `admin_name`=? AND `admin_pass`=?";
+        $values = [$frm_data['admin_name'], $frm_data['admin_pass']];
+
+        $res = select($query, $values, "ss");
+        // print_r($res);
+        if ($res->num_rows == 1) {
+            echo "user got";
+        } else {
+            echo "<script>alert('user name or password wrong')</script>";
+        }
+    }
+?>
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
