@@ -1,4 +1,0 @@
-git status
-git add .
-git commit -m "Update Hotel project"
-git push origin master

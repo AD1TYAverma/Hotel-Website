@@ -1,6 +1,7 @@
+<?php require('inc/db-config.php'); ?>
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,7 +24,44 @@
 
 <body>
 
+    <div class="admin-login">
+        <div class="container">
+            <div class="row justify-content-center align-items-center min-vh-100">
+                <div class="col-lg-5 col-md-7 col-sm-10">
+                    <div class="admin-login-card">
 
+                        <!-- Icon -->
+                        <div class="admin-login-icon">
+                            <i class="fa-solid fa-user-shield"></i>
+                        </div>
+                        <h2 class="h-font">Admin Login</h2>
+                        <p class="text-muted mb-4">Login to access your admin dashboard</p>
+
+                        <form action="" method="POST">
+                            <!-- Email -->
+                            <div class="mb-3 text-start">
+                                <label for="text" class="form-label">User Name</label>
+                                <div class="input-group"><span class="input-group-text"><i class="fa-solid fa-user-tie"></i></span>
+                                    <input type="text" id="text" name="admin_name" class="form-control shadow-none" placeholder="Enter your username" required>
+                                </div>
+                            </div>
+
+                            <!-- Password -->
+                            <div class="mb-3 text-start">
+                                <label for="password" class="form-label">Password</label>
+                                <div class="input-group"> <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
+
+                                    <input type="password" id="password" name="admin_pass" class="form-control shadow-none" placeholder="Enter your password" required>
+                                </div>
+                            </div>
+                            <!-- Login Button -->
+                            <button type="submit" name="login" class="btn admin-login-btn w-100"><span>Login</span><i class="fa-solid fa-arrow-right ms-2"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
