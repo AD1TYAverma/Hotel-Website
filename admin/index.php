@@ -23,50 +23,26 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 </head>
 
-<body>
-
-    <div class="admin-login">
-        <div class="container">
-            <div class="row justify-content-center align-items-center min-vh-100">
-                <div class="col-lg-5 col-md-7 col-sm-10">
-                    <div class="admin-login-card">
-
-                        <!-- Icon -->
-                        <div class="admin-login-icon">
-                            <i class="fa-solid fa-user-shield"></i>
-                        </div>
-                        <h2 class="h-font">Admin Login</h2>
-                        <p class="text-muted mb-4">Login to access your admin dashboard</p>
-
-                        <form action="" method="POST">
-                            <!-- Email -->
-                            <div class="mb-3 text-start">
-                                <label for="text" class="form-label">User Name</label>
-                                <div class="input-group"><span class="input-group-text"><i class="fa-solid fa-user-tie"></i></span>
-                                    <input type="text" id="text" name="admin_name" class="form-control shadow-none" placeholder="Enter your username" required>
-                                </div>
-                            </div>
-
-                            <!-- Password -->
-                            <div class="mb-3 text-start">
-                                <label for="password" class="form-label">Password</label>
-                                <div class="input-group"> <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
-
-                                    <input type="password" id="password" name="admin_pass" class="form-control shadow-none" placeholder="Enter your password" required>
-
-                                    <button type="button" class="btn password-btn shadow-none" id="showPassword"><i class="fa-solid fa-eye"></i></button>
-                                </div>
-                            </div>
-                            <!-- Login Button -->
-                            <button type="submit" name="login" class="btn admin-login-btn w-100"><span>Login</span><i class="fa-solid fa-arrow-right ms-2"></i></button>
-                        </form>
-                    </div>
+<body class="bg-light">
+    <div class="login-from text-center rounded bg-white shadow overflow-hidden">
+        <form action="" method="POST">
+            <h4 class="bg-dark text-white py-3">Admin login</h4>
+            <div class="p-4">
+                <div class="mb-3">
+                    <label class="form-label">User Name</label>
+                    <input type="type" name="admin_name" class="form-control shadow-none" required>
                 </div>
+                <div class="mb-3">
+                    <label class="form-label">Password</label>
+                    <input type="password" name="admin_pass" class="form-control shadow-none" required>
+                </div>
+                <button type="submit" name="login" class="btn custom-bg">Login</button>
             </div>
-        </div>
+        </form>
     </div>
 
-<?php
+
+    <?php
     if (isset($_POST['login'])) {
         $frm_data = filteration($_POST);
 
@@ -81,7 +57,10 @@
             echo "<script>alert('user name or password wrong')</script>";
         }
     }
-?>
+    ?>
+
+
+
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
